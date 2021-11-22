@@ -19,5 +19,6 @@ function toCamelCase(str){
     return result.join('')
 }   
 
+//examples
 console.log(toCamelCase("the-stealth-warrior")); // "theStealthWarrior"
 console.log(toCamelCase("The_Stealth_Warrior")); // "TheStealthWarrior"
