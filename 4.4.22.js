@@ -20,3 +20,19 @@ function sumOfDifferences(arr){
 function reverseWrods(str){
     return str.split(' ').reverse().join(' ') // first turns the str into an array, then reverses the array, then joins it all back together
 }
+
+//Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+
+function shortcut(string){
+    let vowels = ['a','e','i','o', 'u']
+    
+    let result = [];
+  
+    for (let i = 0 ; i < string.length ; i++){
+        if (!vowels.includes(string[i])){
+            result.push(string[i])
+        }
+    }return result.join('')
+};
+
+console.log(shortcut('hello'))
