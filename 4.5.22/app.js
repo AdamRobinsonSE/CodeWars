@@ -11,7 +11,7 @@
 //Make a function that takes in two arguments (salary & bonus), bonus will be a boolean, if its true multiply the salary by 10, return the value with a prefix of "£" using "\u00A3"
 
 function bonusTime(salary, bonus){
-    return bonus === true ? `\u00A3${salary * 10}` : salary
+    return bonus === true ? `\u00A3${salary * 10}` : `\u00A3${salary}`
 }
 
 console.log(bonusTime(1000, true))
