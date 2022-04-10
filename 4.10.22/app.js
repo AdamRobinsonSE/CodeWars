@@ -26,5 +26,6 @@ function petYears(humanYears){
         catYears = 24 + ((humanYears - 2) * 4)
         dogYears = 24 + ((humanYears - 2) * 5)  
     }
+    
     return [humanYears,catYears,dogYears]   
 }
