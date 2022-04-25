@@ -14,3 +14,9 @@ function generateRange(min,max,step){
         result.push(i)
     }
 }
+
+//Create a function to remove the first & last character of a string
+
+function remove(str){
+    return str.slice(1, string.length - 1)
+}

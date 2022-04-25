@@ -6,4 +6,4 @@ function sumOfDifferences(arr){
     return arr.sort((a,b) => b - a)
     .map((e,i) => e - arr[i + 1] || 0)
     .reduce((acc,c) => acc + c, 0)
- }
+}
