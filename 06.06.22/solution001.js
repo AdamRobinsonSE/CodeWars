@@ -20,15 +20,19 @@
 // All data will always be valid and uniform as in the example above.
 
 
+// function countDevelopers(list) {
+//     let result = []
+//     for(let i = 0 ; i < list.length ; i++){
+//         if(list[i].continent === 'Europe' && list[i].language === 'JavaScript'){
+//             result.push(list[i])
+//         }
+//     }
+//     return result.length
+// };
+
 function countDevelopers(list) {
-    let result = []
-    for(let i = 0 ; i < list.length ; i++){
-        if(list[i].continent === 'Europe' && list[i].language === 'JavaScript'){
-            result.push(list[i])
-        }
-    }
-    return result.length
-};
+    return list.filter(x=>x.continent=='Europe'&&x.language=='JavaScript').length
+;}
 
 console.log(countDevelopers([
     { firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'JavaScript' },
