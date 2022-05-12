@@ -2,7 +2,7 @@
 
 https://www.codewars.com/users/AdamRobinsonSE
 
-![alt tag](https://1drv.ms/u/s!Am6sFMnTVgc4bivWKALZ6qlWCZ4)
+![alt tag](https://photos.google.com/u/2/photo/AF1QipOyyx9RsZx4nl1gYOUxRT0Ff0UwKRkJwyqvfwl8)
 
 ## How It's Made:
 
