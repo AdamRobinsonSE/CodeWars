@@ -11,9 +11,14 @@
 //R: Return them
 
 
+
 function otherAngle(a, b) {
+    //triangle angles must always equal 180, simple subtraction equation 
     return 180 - (a + b)
   }
+
+
+//E:
 
 otherAngle(30,60)
 otherAngle(60,60)
