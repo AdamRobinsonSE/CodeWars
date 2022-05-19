@@ -14,7 +14,7 @@
 
 function repeatString(str, num){
     //tenary operator
-    //check if string is a string, return string repeated, or not a string
+    //check if string is a string
     return typeof str === 'string' ? str.repeat(n) : 'Not a string'
 };
 
