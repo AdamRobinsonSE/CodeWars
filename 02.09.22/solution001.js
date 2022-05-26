@@ -20,7 +20,7 @@ function pipeFix(numbers){
     //define new array to push numbers into
     let result = [] 
     //loop through existing array and push i into it if it doesn't already include i
-    for (let i = numbers[0] ; i < numbers[numbers.length - 1] ; i++){
+    for (let i = numbers[0] ; i <= numbers[numbers.length - 1] ; i++){
         if (!result.includes[numbers[i]]){
             result.push(i) 
         }
