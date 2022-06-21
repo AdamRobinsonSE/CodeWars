@@ -3,9 +3,9 @@
 // count(['james', 'james', 'john']) 
 // #=> { 'james': 2, 'john': 1}
 
-//PREP
-//P: Given an array of elements
-//R Return an object that counts the number of each unique element present
+// PREP
+// P: Given an array of elements
+// R Return an object that counts the number of each unique element present
 
 function count(array){
     const sortedArr = array.sort((a,b) => a - b)
@@ -20,3 +20,4 @@ function count(array){
 
 console.log(count(['james','james','john'])) // {'james': 2, 'john': 1}
 console.log(count(['a','a','b','b','b'])) // {'a': 2, 'b': 3}
+
