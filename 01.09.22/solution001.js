@@ -9,4 +9,4 @@
 function position(letter){
     const alphabet = '1abcdefghijklmnopqrstuvwxyz';
     return `Position of alphabet: ${alphabet.indexOf(letter)}`
-  };
+  }
