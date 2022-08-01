@@ -7,9 +7,9 @@
 function palindrome(string){
     //variable to remove all characters I don't want
     const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
-    //variable taking original string and putting it to lowercase, split into array, reverse array, join back together
+    //variable taking original string and putting it to lowercase, split into array, filter through it to remove characters, reverse array, join back together
     const newStr = string.toLowerCase().split('').filter(e => alphabet.includes(e)).join('')
-    //variable of the reverse of the string
+    //variable of the reverse of the string, same as newStr variable + reverse
     const reverseStr = string.toLowerCase().split('').filter(e => alphabet.includes(e)).reverse().join('')
     //tenary operator comparing the new strings
     return newStr === reverseStr ? true : false
