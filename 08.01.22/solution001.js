@@ -1,7 +1,7 @@
 //PALINDROME!!!
 
 //This is how I normally try to do all my problems to learn. 
-    //what parmeters am I given? what are the test/edge cases?
+    //what is my parameter?
     //what am I returning? 
     //pseudo code first, then type the actual code
     //examples/edge cases to test what they should be
