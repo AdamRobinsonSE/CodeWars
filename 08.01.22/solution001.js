@@ -5,6 +5,7 @@
 
 //Pseudo Code
 function palindrome(string){
+    //variable to remove all characters I don't want
     const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
     //variable taking original string and putting it to lowercase, split into array, reverse array, join back together
     const newStr = string.toLowerCase().split('').filter(e => alphabet.includes(e)).join('')
