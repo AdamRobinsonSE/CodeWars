@@ -16,12 +16,16 @@
 
 //P: given two parameters, a string, and a number
 //R: an array of strings of equal length
+
 var splitInParts = function(s, partLength){
+    //newArr to push chunked slices into
     let newArr = []
+    //loop through string by partLength
     for(let i = 0 ; i < s.length ; i+=partLength){
-        const chunk = s.slice(i, i + partLength)
+        const chunk = s.slice(i, i + partLength) // chunked slices of the string to push into newArr
         newArr.push(chunk)
     }
+    //join it all together with ' '
     return newArr.join(' ')
 };
 

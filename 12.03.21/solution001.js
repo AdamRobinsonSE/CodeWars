@@ -6,9 +6,11 @@
 
 
 function billboard(name, price = 30){
-    let answer = name.length
-    for(let i = 1 ; i < price ; i++){
+    let answer = 0
+    for(let i = 1 ; i <= price ; i++){
         answer += name.length
     }
     return answer
 };
+
+console.log(billboard('adam'))
