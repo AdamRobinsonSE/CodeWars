@@ -17,15 +17,9 @@
 
 function modifyMultiply (str,loc,num) {
     let result = []
-    let newStr = str.split(' ')
-    for(let i = 0 ; i < newStr.length ; i++){
-        if(newStr.indexOf(newStr[i]) === loc){
-            result.push(newStr[i])
-        }
-    }
-    let word = result[0]
-    for(let i = 2 ; i <= num ; i++){
-        result.push(word)
+    let newArr = str.split(' ')
+    for(let i = 0 ; i < num ; i++){
+        result.push(newArr[loc])
     }
     return result.join('-')
 } 

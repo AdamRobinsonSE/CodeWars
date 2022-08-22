@@ -35,4 +35,4 @@ function cake(x, y){
 console.log(cake(900,'abcdef')) // 'That was close!'
 console.log(cake(56, 'ifkhchlhfd')) // 'Fire!'
 console.log(cake(256,'aaaaaddddr')) // 'Fire!
-console.log(cake(981, 'yawxskqfma'))
+console.log(cake(981, 'yawxskqfma')) // 'Fire!'
