@@ -18,7 +18,7 @@ function feast(beast, dish) {
     const beastLastLetter = beast[beast.length - 1] // holds last letter of beast
     const dishFirstLetter = dish[0] // holds first letter of dish
     const dishLastLetter = dish[dish.length - 1] // holds last letter of dish
-    //if/else to compare the letters
+    //if/else to compare
     if(beastFirstLetter === dishFirstLetter && beastLastLetter === dishLastLetter){
         return true
     }else {
