@@ -1,31 +1,27 @@
-// Some new animals have arrived at the zoo. The zoo keeper is concerned that perhaps the animals do not have the right tails. To help her, you must correct the broken function to make sure that the second argument (tail), is the same as the last letter of the first argument (body) - otherwise the tail wouldn't fit!
+// Implement a function which takes a sequence of objects and a property name, and returns a sequence containing the named property of each object.
 
-// If the tail is right return true, else return false.
+// For example:
 
-// The arguments will always be strings, and normal letters.
+// pluck([{a:1}, {a:2}], 'a')      // -> [1,2]
+// pluck([{a:1, b:3}, {a:2}], 'b') // -> [3, undefined]
+// If an object is missing the property, you should just leave it as undefined/None in the output array.
 
-// For Haskell, body has the type of String and tail has the type of Char. For Go, body has type string and tail has type rune.
+//PREP
 
+//PARAMETERS: Given an array of objects, and a property
 
-//Whats given
-// function correctTail(bod, tail ;
+//RETURN: return the value of the properties in an array, if the object has a property not asked to be plucked, leave it as undefined in the array
+
+//fast way
+function pluck(objs, name) {
   
-//     sub = body.substr(bodylength-(tail.length)
-    
-//     if sub = tail) ;
-//       return true
-//     }
-//     else 
-//       return false
-    
-  
+}
 
-//Fixed
-function correctTail(body, tail) {
-    let sub = body[body.length - 1]
-    if (sub === tail){
-      return true
-    }else {
-      return false
-    }
-};
+//long way
+function pluck(objs, name) {
+
+}
+
+//EXAMPLES:
+console.log(pluck([{a:1}, {a:2}], 'a')) // [1,2]
+console.log(pluck([{a:1, b:3}, {a:2}], 'b')) // [3,undefined]
