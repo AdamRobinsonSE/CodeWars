@@ -53,8 +53,7 @@ function infected(str) {
             totalInfected += arr[i].length // gives us total infected population of the arr
         }
     }
-    return (100 * totalInfected) / totalPop
-   
+    return (100 * totalInfected) / totalPop || 0
 };
 
 console.log(infected("01000000X000X011X0X"))
