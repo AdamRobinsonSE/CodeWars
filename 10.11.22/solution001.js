@@ -2,8 +2,6 @@
 
 // The passed in string will only consist of alphabetical characters and spaces(' '). Spaces will only be present if there are multiple words. Words will be separated by a single space(' ').
 
-
-
 // Paramters: given a string
 
 // Return: return a new string in weird case, even character index items to uppercase, odd to lower case, each word starts over as a 0 index

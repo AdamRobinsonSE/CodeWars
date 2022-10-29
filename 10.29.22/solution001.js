@@ -17,7 +17,7 @@ function howManyGifts(maxBudget, gifts){
     let result = []
     for(let i = 0 ; i < arr.length ; i++) {
         total += arr[i]
-        if (total < maxBudget) {
+        if (total <= maxBudget) {
             result.push(arr[i])
         }
     }
