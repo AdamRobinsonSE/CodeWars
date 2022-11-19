@@ -12,7 +12,6 @@
 function dashatize(num) {
     if (isNaN(num)) return 'NaN'
 
-
     let result = String(num).split('')
                             .map(num => {
                                 return num % 2 !== 0 ? `-${num}-` : num

@@ -27,6 +27,7 @@ function Xbonacci(signature,n){
         let sum = result.slice(-length).reduce((acc,c) => acc + c, 0)
         result.push(sum)
     }
+    
     return result  
 };
 console.log(Xbonacci([0,1],10)) // [0,1,1,2,3,5,8,13,21,34]
