@@ -23,16 +23,9 @@ function Xbonacci(signature,n){
         }
     }
 
-    if(signature.length === 2){
-        for(let i = result.length ; i < n ; i++){
-            let sum = result.slice(-2).reduce((acc,c) => acc + c, 0)
-            result.push(sum)
-        }
-    } else {
-        for(let i = result.length ; i < n ; i++){
-            let sum = result.slice(-length).reduce((acc,c) => acc + c, 0)
-            result.push(sum)
-        }
+    for(let i = result.length ; i < n ; i++){
+        let sum = result.slice(-length).reduce((acc,c) => acc + c, 0)
+        result.push(sum)
     }
     return result  
 };
