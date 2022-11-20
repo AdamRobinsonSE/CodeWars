@@ -27,7 +27,7 @@ function solve(str) {
         }
     })
 
-    return result
+    return Math.max(...result)
 };
 
 console.log(solve('zodiacs')) // 26
