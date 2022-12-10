@@ -1,12 +1,13 @@
-// Given 2 strings, a and b, return a string of the form: shorter+reverse(longer)+shorter.
+// Your task is to find the nearest square number, nearest_sq(n), of a positive integer n.
 
-// In other words, the shortest string has to be put as prefix and as suffix of the reverse of the longest.
+// Goodluck :)
 
-// Strings a and b may be empty, but not null (In C# strings may also be null. Treat them as if they are empty.).
-// If a and b have the same length treat a as the longer producing b+reverse(a)+b
+// Check my other katas:
 
-function shorter_reverse_longer(a,b){
-    return ""
+function nearestSq(n){
+    return Math.pow(Math.round(Math.sqrt(n)),2)
 };
 
-console.log()
+console.log(nearestSq(1)) // 1
+console.log(nearestSq(2)) // 1
+console.log(nearestSq(10)) // 9

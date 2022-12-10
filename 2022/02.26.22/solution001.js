@@ -45,7 +45,7 @@ function greet(language) {
 
   for (const prop in obj){
       if (prop === language){
-          string = obj[prop]g
+          string = obj[prop]
       }
   }
   return string
