@@ -27,6 +27,7 @@
 function diamond(n){
     if(n <= 0 || n % 2 === 0) return null;
     let result = '';
+    //takes care of the first spaces 
     for(let i = 1; i <= n; i += 2){
       result += " ".repeat( (n-i) / 2 ) + "*".repeat(i) + "\n";
     }
