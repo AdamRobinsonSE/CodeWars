@@ -1,31 +1,29 @@
-// A string is considered to be in title case if each word in the string is either (a) capitalised (that is, only the first letter of the word is in upper case) or (b) considered to be an exception and put entirely into lower case unless it is the first word, which is always capitalised.
+// Everybody knows the classic "half your age plus seven" dating rule that a lot of people follow (including myself). It's the 'recommended' age range in which to date someone.
 
-// Write a function that will convert a string into title case, given an optional list of exceptions (minor words). The list of minor words will be given as a string with each word separated by a space. Your function should ignore the case of the minor words string -- it should behave in the same way even if the case of the minor word string is changed.
+// minimum age <= your age <= maximum age
 
-// ###Arguments (Haskell)
+// Task
+// Given an integer (1 <= n <= 100) representing a person's age, return their minimum and maximum age range.
 
-// First argument: space-delimited list of minor words that must always be lowercase except for the first word in the string.
-// Second argument: the original string to be converted.
-// ###Arguments (Other languages)
+// This equation doesn't work when the age <= 14, so use this equation instead:
 
-// First argument (required): the original string to be converted.
-// Second argument (optional): space-delimited list of minor words that must always be lowercase except for the first word in the string. The JavaScript/CoffeeScript tests will pass undefined when this argument is unused.
-// ###Example
+// min = age - 0.10 * age
+// max = age + 0.10 * age
+// You should floor all your answers so that an integer is given instead of a float (which doesn't represent age). Return your answer in the form [min]-[max]
 
-// titleCase('a clash of KINGS', 'a an the of') // should return: 'A Clash of Kings'
-// titleCase('THE WIND IN THE WILLOWS', 'The In') // should return: 'The Wind in the Willows'
-// titleCase('the quick brown fox') // should return: 'The Quick Brown Fox'
+// ##Examples:
 
-function titleCase(title, minorWords) {
-    if (!title) return ''
-    minorWords = minorWords ? minorWords.toLowerCase().split(' ') : 0
-    return title.toLowerCase()
-                .split(' ')
-                .map((word, i) => {
-                    return minorWords.includes(word) && i !== 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
-                })
-                .join(' ')
-}
+// age = 27   =>   20-40
+// age = 5    =>   4-5
+// age = 17   =>   15-20
 
-console.log(titleCase('a clash of KINGS', 'a an the of')) // 'A Clash of Kings'
-console.log(titleCase('THE WIND IN THE WILLOWS', 'The In')) // 'The Wind in the Willows'
+function datingRange(age){
+    min = Math.floor(age - 0.10 * age)
+ 
+    max = Math.floor(age + 0.10 * age)
+ 
+    return `${min}-${max}`
+ 
+};
+
+console.log(datingRange(27))
