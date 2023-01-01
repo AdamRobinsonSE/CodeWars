@@ -17,16 +17,15 @@
 // titleCase('the quick brown fox') // should return: 'The Quick Brown Fox'
 
 function titleCase(title, minorWords) {
-    if (!title.length) return '';
-  
-    let exclusions = minorWords ? minorWords .toLowerCase().split(' ') : [];
-    
-    return title.toLowerCase().split(' ').map((word, index) => {
-      return (index === 0) ? word[0].toUpperCase() + word.slice(1) :
-          exclusions.includes(word) ? word : word[0].toUpperCase() + word.slice(1);
-    }).join(' ');
-  
-  }
+    if (!title) return ''
+    minorWords = minorWords ? minorWords.toLowerCase().split(' ') : 0
+    return title.toLowerCase()
+                .split(' ')
+                .map((word, i) => {
+                    return minorWords.includes(word) && i !== 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
+                })
+                .join(' ')
+}
 
 console.log(titleCase('a clash of KINGS', 'a an the of')) // 'A Clash of Kings'
 console.log(titleCase('THE WIND IN THE WILLOWS', 'The In')) // 'The Wind in the Willows'
