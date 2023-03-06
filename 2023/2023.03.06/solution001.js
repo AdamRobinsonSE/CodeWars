@@ -19,7 +19,7 @@
 
 //return the total number of smiling faces in the array
 function countSmileys(arr) {
-  var smileys = [
+  let smileys = [
     ":)",
     ";)",
     ":-)",
@@ -33,10 +33,10 @@ function countSmileys(arr) {
     ";-D",
     ";~D",
   ];
-  var count = 0;
+  let count = 0;
 
-  for (var i = 0; i < arr.length; i++) {
-    for (var j = 0; j < smileys.length; j++) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < smileys.length; j++) {
       if (arr[i] === smileys[j]) {
         count++;
       }
